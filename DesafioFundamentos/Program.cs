@@ -32,22 +32,27 @@ while (exibirMenu)
     switch (Console.ReadLine())
     {
         case "1":
+            Console.Clear();
             es.AdicionarVeiculo();
             break;
 
         case "2":
+            Console.Clear();
             es.RemoverVeiculo();
             break;
 
         case "3":
+            Console.Clear();
             es.ListarVeiculos();
             break;
 
         case "4":
+            Console.Clear();
             exibirMenu = false;
             break;
 
         default:
+            Console.Clear();
             Console.WriteLine("Opção inválida");
             break;
     }
@@ -56,4 +61,5 @@ while (exibirMenu)
     Console.ReadLine();
 }
 
-Console.WriteLine("O programa se encerrou");
+Console.Clear();
+Console.WriteLine("O programa se encerrou. Obrigado!");
